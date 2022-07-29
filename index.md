@@ -25,7 +25,7 @@ Stack : Spark, Scikit-learn, Ipyleaflet, Conda.
 
 **Context:** Multivariate prediction is crucial for Customs analysts. Detecting trends, and shift can be challenging while monitoring high number of goods and origins of imports. Moreover, shifts sometimes reflect a fraudulent behavior: while the shift in the clearance behavior is coupled with the introduction of an Anti-Dumping-Duty, risk of falsly declared good or origin sometimes occurs.  
 
-**Methods:** Adapted a seq-to-seq methodology, methods mainly used in NLP to perform a weekly prediction of aggregated values imported, at scale. Used tensors of 10 weeks x n-channels x m-batches to predict the next 2 weeks x n-channels x m-batches. Compared 4 differents models, encoder-decoder variations. Performed residual analysis. ([GitHub](https://github.com/Nathannous/my_portfolio/sample_code/monitoring/)
+**Methods:** Adapted a seq-to-seq methodology, methods mainly used in NLP to perform a weekly prediction of aggregated values imported, at scale. Used tensors of 10 weeks x n-channels x m-batches to predict the next 2 weeks x n-channels x m-batches. Compared 4 differents models, encoder-decoder variations. Performed residual analysis. ([GitHub])(https://github.com/Nathannous/my_portfolio/tree/main/sample_code/monitoring)
 
 **Data:** Historic of 257 weeks of customs imports. 209 weeks for training-set, 48 for the test set.  
 
@@ -36,9 +36,12 @@ Stack : Spark, Tensorflow-Keras, Jupyter.
 ---
 ## Detecting undervalued imports using linear regression
 
+<center><img src="images/undervaluation.PNG" width="800"/></center>
+
+
 **Context:** Undervalutations occurs when an importer deliberately underevaluate the value of the imported good on the custom declaration. The main implication is a reduction of a VAT and Customs duties payed at the border. Detecting undervaluations at scale is then crucial in order to garantee EU member state ressources. 
 
-**Methods:** For most of the goods, an intrinsic relation between price payed and quantities imported can be constated. Thus, linear methods can be used to estimate, for each goods and origin of import, the main link between price and quantities imported. Potential fraudulent transactions are those failing to follow the pattern of the majority of data where for a given quantities imported, the price is slighty lower than other imports of the same product and origin. ([GitHub](https://github.com/Nathannous/my_portfolio/sample_code/undervaluation/)
+**Methods:** For most of the goods, an intrinsic relation between price payed and quantities imported can be constated. Thus, linear methods can be used to estimate, for each goods and origin of import, the main link between price and quantities imported. Potential fraudulent transactions are those failing to follow the pattern of the majority of data where for a given quantities imported, the price is slighty lower than other imports of the same product and origin. ([GitHub])(https://github.com/Nathannous/my_portfolio/tree/main/sample_code/undervaluation)
 
 **Data:** Customs goods which follows a linear trend between quantities and weights (ex: fabrics)
 
